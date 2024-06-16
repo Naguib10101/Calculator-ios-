@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    border: none;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background: #123;
+}
+
+.container{
+    width: 300px;
+    height: 450px;
+    margin: 10rem auto;
+    background: rgba(0, 0, 0, 0.87);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    position: relative;
+}
+.container input{
+    width: 300px;
+    padding: 2rem;
+    background: black;
+    color: #fff;
+    outline: none;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    text-align: right;
+    font-size: 3.5rem;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1.5rem auto;
+}
+.row .zero{
+    width: 120px !important;
+    grid-column: span 2;
+    border-radius: 5rem !important;
+    -webkit-border-radius: 5rem !important;
+    -moz-border-radius: 5rem !important;
+    -ms-border-radius: 5rem !important;
+    -o-border-radius: 5rem !important;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: rgba(255, 248, 248, 0.4);
+    color: #fff;
+    font-size: 2.5rem;
+}
+button:hover{
+    background: rgba(134 134 134 / 50%);
+}
+button:active{
+    background: rgba(255, 253, 253, 0.77);
+}
+
+button.grey-light-op{
+    font-size: 2rem !important;
+    background: rgb(128, 128, 128 , 1);
+    color: #000;
+}
+button.grey-light-op:hover{
+    background: rgb(128, 128, 128 , 0.8);
+}
+button.grey-light-op:active{
+    background: rgb(208, 207, 207);
+}
+
+button.orange-op{
+    background: rgb(255, 166, 0 , 1);
+}
+button.orange-op:hover{
+    background: rgb(255, 166, 0 , 0.8);
+}
+button.orange-op:active{
+    background: rgb(255, 255, 255);
+    color: rgb(255, 166, 0);
+}
+
+.swipe-up {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 3px;
+    border-radius: 15px;
+    background: #fff;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+@media(max-width:567px){
+    body{
+        background: black;
+    }
+    .container{
+    height: calc(100vh - 100px);
+    margin: 100px auto 0;
+    }
+}
